@@ -3,8 +3,11 @@ pub mod db;
 pub mod schema;
 pub mod models;
 
-fn main() {
+use std::env;
 
+#[tokio::main]
+async fn main() {
+    let url = env::args().nth(0).unwrap();
 
     println!("Hello, world!");
 }
