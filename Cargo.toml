@@ -1,0 +1,13 @@
+[package]
+name = "bench-sql"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.4", features = ["postgres"] }
+jsonrpsee-http-server = "0.6"
+jsonrpsee-proc-macros = "0.6"
+tokio = { version = "1.14", features = ["full"] }
+ckb-types = "0.101"
